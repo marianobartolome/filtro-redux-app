@@ -47,7 +47,7 @@ import { APP_BASE_HREF } from '@angular/common';
   ],
   providers: [{
     provide: APP_BASE_HREF,
-    useValue: '/'
+    useValue: 'https://marianobartolome.github.io/'
  }],
   bootstrap: [AppComponent]
 })
