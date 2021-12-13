@@ -45,10 +45,7 @@ import { APP_BASE_HREF } from '@angular/common';
      // autoPause: true, // Pauses recording actions and state changes when the extension window is not open
     }),
   ],
-  providers: [{
-    provide: APP_BASE_HREF,
-    useValue: 'https://marianobartolome.github.io/'
- }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
