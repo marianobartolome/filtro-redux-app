@@ -20,6 +20,7 @@ import { TodoAddComponent } from './todo/todo-add/todo-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { FilterPipe } from './filter/filter.pipe';
+import { APP_BASE_HREF } from '@angular/common';
 
 
 @NgModule({
@@ -44,7 +45,10 @@ import { FilterPipe } from './filter/filter.pipe';
      // autoPause: true, // Pauses recording actions and state changes when the extension window is not open
     }),
   ],
-  providers: [],
+  providers: [{
+    provide: APP_BASE_HREF,
+    useValue: '/'
+ }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
